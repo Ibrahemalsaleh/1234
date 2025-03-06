@@ -1,0 +1,271 @@
+/*  --------------------------------------------------
+    Custom Styles for E-commerce Cart
+    Designed to complement Bootstrap and Remixicon
+    --------------------------------------------------  */
+
+/*  --------------------------------------------------
+    General Styles
+    --------------------------------------------------  */
+    body {
+        font-family: 'Tajawal', sans-serif; /* You can choose another Arabic font from Google Fonts */
+        color: #333;
+        background-color: #f8f9fa; /* Light gray background color */
+        direction: rtl; /* Right-to-left text direction */
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #495057; /* Slightly darker color for headings */
+        font-weight: bold;
+    }
+    
+    a {
+        color: #007bff; /* Default link color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: #0056b3; /* Darker link color on hover */
+        text-decoration: underline;
+    }
+    
+    /*  --------------------------------------------------
+        Navbar Styles
+        --------------------------------------------------  */
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow */
+    }
+    
+    .navbar-brand img {
+        max-height: 40px; /* Set max height for the logo */
+    }
+    
+    .search-bar {
+        border-radius: 25px; /* Rounded corners for search bar */
+        border: 1px solid #ced4da;
+    }
+    
+    .search-bar:focus {
+        box-shadow: 0 0 0 0.2rem rgba(204, 14, 118, 0.25); /* Pink shadow on focus */
+        border-color: #cc0e76;
+    }
+    
+    .btn-success {
+        background-color: #cc0e76; /* Pink color for primary button */
+        border-color: #cc0e76;
+    }
+    
+    .btn-success:hover {
+        background-color: #a60b5e; /* Darker pink on hover */
+        border-color: #a60b5e;
+    }
+    
+    .btn-success:focus, .btn-success.focus {
+        box-shadow: 0 0 0 0.2rem rgba(204, 14, 118, 0.5); /* Pink shadow on focus/active */
+    }
+    
+    .navbar-nav .nav-link {
+        margin-right: 15px;
+        margin-left: 15px;
+        color: #495057;
+        font-weight: 500;
+    }
+    
+    .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+        color: #cc0e76; /* Pink color for active/hover nav links */
+    }
+    
+    .navbar-nav.ms-auto .nav-link {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .navbar-nav.ms-auto .nav-link i {
+        font-size: 1.2rem;
+    }
+    
+    
+    /*  --------------------------------------------------
+        Product Card Styles (Products Page)
+        --------------------------------------------------  */
+    .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Lighter shadow for product cards */
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: scale(1.03); /* Slight scale up on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    }
+    
+    .card-img-top {
+        height: 200px; /* Fixed height for product images */
+        object-fit: cover; /* Cover image area */
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+    
+    .card-title {
+        margin-bottom: 0.75rem;
+        font-size: 1.25rem;
+        color: #343a40;
+    }
+    
+    .card-text {
+        color: #6c757d;
+    }
+    
+    .btn-primary {
+        background-color: #cc0e76;
+        border-color: #cc0e76;
+    }
+    
+    .btn-primary:hover {
+        background-color: #a60b5e;
+        border-color: #a60b5e;
+    }
+    
+    .btn-primary:focus, .btn-primary.focus {
+        box-shadow: 0 0 0 0.2rem rgba(204, 14, 118, 0.5);
+    }
+    
+    
+    /*  --------------------------------------------------
+        Shopping Cart Styles (Cart Page)
+        --------------------------------------------------  */
+    .list-group-item {
+        border: 1px solid #dee2e6;
+        border-radius: 0;
+        padding: 15px;
+    }
+    
+    .list-group-item:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    
+    .list-group-item:last-child {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .quantity-input {
+        width: 70px;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+    
+    .btn-danger:hover {
+        background-color: #c82333;
+        border-color: #c82333;
+    }
+    
+    
+    /*  --------------------------------------------------
+        Checkout Page Styles
+        --------------------------------------------------  */
+    .needs-validation .form-control:valid,
+    .needs-validation .form-control.is-valid {
+        border-color: #cc0e76; /* Pink color for valid form fields */
+        padding-right: calc(1.5em + .75rem);
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='green' d='M2.3 6.73L.6 4.53c-.4-
+    
+    .4-.4-1.04 0-1.4l2.18-2.18c.4-.4 1.04-.4 1.4 0l3.89 3.89c.4.4.4 1.04 0 1.4l-6.25 6.25c-.2.2-.5.3-.7.3-.3 0-.5-.1-.7-.3z'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right calc(.375em + .1875rem) center;
+        background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+    }
+    
+    .needs-validation .form-control:invalid,
+    .needs-validation .form-control.is-invalid {
+        border-color: #dc3545;
+        padding-right: calc(1.5em + .75rem);
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5' fill='white' stroke-width='1.5'/%3e%3cpath stroke-linecap='round' stroke-width='1.5' d='M6 3.5v5M6 8v1.5'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right calc(.375em + .1875rem) center;
+        background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+    }
+    
+    
+    /*  --------------------------------------------------
+        Footer Styles
+        --------------------------------------------------  */
+    .footer {
+        background-color: #f8f9fa;
+        border-top: 1px solid #dee2e6;
+        color: #6c757d;
+    }
+    
+    .footer h3 {
+        color: #495057;
+        margin-bottom: 1rem;
+    }
+    
+    .footer a {
+        color: #6c757d;
+    }
+    
+    .footer a:hover {
+        color: #007bff;
+    }
+    
+    .footer .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 1.2rem;
+        color: #495057;
+    }
+    
+    .footer .social-icons a:hover {
+        color: #cc0e76; /* Pink color for social icons on hover */
+    }
+    
+    .footer .form-control {
+        border-radius: 25px;
+        border: 1px solid #ced4da;
+    }
+    
+    .footer .form-control:focus {
+        box-shadow: 0 0 0 0.2rem rgba(204, 14, 118, 0.25);
+        border-color: #cc0e76;
+    }
+    
+    .footer .btn-success {
+        border-radius: 25px;
+        color: black; /* Black text color for newsletter signup button */
+    }
+    
+    
+    /*  --------------------------------------------------
+        Responsive adjustments (Optional - Bootstrap already handles a lot)
+        --------------------------------------------------  */
+    @media (max-width: 768px) {
+        .navbar-brand img {
+            max-height: 30px;
+        }
+        .navbar-nav .nav-link {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .card-img-top {
+            height: 150px;
+        }
+        .footer .col-lg-4 {
+            margin-bottom: 30px;
+        }
+    }
